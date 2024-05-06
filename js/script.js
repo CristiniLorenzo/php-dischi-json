@@ -4,7 +4,7 @@ createApp({
     data() {
         return {
             myVar: 'test',
-           discs: [], 
+            discs: [], 
         };
     },
     methods: {
@@ -12,6 +12,7 @@ createApp({
             axios.get('server.php').
             then((response) => {
                 this.discs = response.data;
+                console.log(this.discs);
             }); 
         },
         
